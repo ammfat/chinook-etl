@@ -1,0 +1,20 @@
+{
+    "schema_fields": [
+        {"name": "ArtistId", "type": "INTEGER", "mode": "REQUIRED"},
+        {"name": "ArtistName", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "AlbumId", "type": "INTEGER", "mode": "REQUIRED"},
+        {"name": "Title", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "TrackId", "type": "INTEGER", "mode": "REQUIRED"},
+        {"name": "Name", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "UnitPrice", "type": "FLOAT", "mode": "NULLABLE"},
+        {"name": "Bytes", "type": "INTEGER", "mode": "NULLABLE"},
+        {"name": "GenreId", "type": "INTEGER", "mode": "NULLABLE"},
+        {"name": "GenreName", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "LastUpdatedAtInvoiceDate", "type": "DATE", "mode": "NULLABLE"},
+        {"name": "_SnapshotTimestamp", "type": "TIMESTAMP", "mode": "NULLABLE"}
+    ],
+    "time_partitioning": {
+        "time_partitioning_type": "DAY",
+        "field": "LastUpdatedAtInvoiceDate"
+    }
+}

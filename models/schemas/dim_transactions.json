@@ -1,0 +1,21 @@
+{
+    "schema_fields": [
+        {"name": "TrackId", "type": "INTEGER", "mode": "REQUIRED"},
+        {"name": "InvoiceId", "type": "INTEGER", "mode": "REQUIRED"},
+        {"name": "CustomerId", "type": "INTEGER", "mode": "REQUIRED"},
+        {"name": "InvoiceDate", "type": "DATE", "mode": "NULLABLE"},
+        {"name": "Total", "type": "FLOAT", "mode": "NULLABLE"},
+        {"name": "FullName", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "Address", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "City", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "State", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "Country", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "PostalCode", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "Email", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "_SnapshotTimestamp", "type": "TIMESTAMP", "mode": "NULLABLE"}
+    ],
+    "time_partitioning": {
+        "time_partitioning_type": "DAY",
+        "field": "InvoiceDate"
+    }
+}

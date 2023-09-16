@@ -1,0 +1,17 @@
+{
+    "schema_fields": [
+        {"name": "ArtistId", "type": "INTEGER", "mode": "REQUIRED"},
+        {"name": "Name", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "Title", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "TrackName", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "TotalPrice", "type": "FLOAT", "mode": "NULLABLE"},
+        {"name": "InvoiceLineId", "type": "INTEGER", "mode": "REQUIRED"},
+        {"name": "InvoiceId", "type": "INTEGER", "mode": "REQUIRED"},
+        {"name": "InvoiceDate", "type": "DATE", "mode": "NULLABLE"},
+        {"name": "_SnapshotTimestamp", "type": "TIMESTAMP", "mode": "NULLABLE"}
+    ],
+    "time_partitioning": {
+        "time_partitioning_type": "DAY",
+        "field": "InvoiceDate"
+    }
+}
